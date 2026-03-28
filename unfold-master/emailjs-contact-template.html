@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>New Contact Message - Fatlind.</title>
+  </head>
+  <body style="margin:0;padding:0;background:#070707;font-family:Arial,Helvetica,sans-serif;color:#f5f5f5;">
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#070707;padding:28px 14px;">
+      <tr>
+        <td align="center">
+          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="max-width:680px;background:#101010;border:1px solid #1f1f1f;border-radius:14px;overflow:hidden;">
+            <tr>
+              <td style="padding:26px 30px;background:linear-gradient(90deg,#0f0f0f,#1a1a1a);border-bottom:1px solid #252525;">
+                <div style="font-size:30px;line-height:1.2;font-weight:800;letter-spacing:.3px;color:#ffffff;">
+                  {{site_name}}<span style="color:#D63447;">.</span>
+                </div>
+                <div style="margin-top:8px;font-size:13px;color:#b7b7b7;">
+                  New message from your portfolio contact form
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:28px 30px 18px 30px;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td style="font-size:12px;color:#9d9d9d;padding-bottom:6px;text-transform:uppercase;letter-spacing:.8px;">From</td>
+                  </tr>
+                  <tr>
+                    <td style="font-size:18px;color:#ffffff;font-weight:700;padding-bottom:4px;">{{from_name}}</td>
+                  </tr>
+                  <tr>
+                    <td style="font-size:14px;color:#d0d0d0;padding-bottom:16px;">
+                      <a href="mailto:{{from_email}}" style="color:#d0d0d0;text-decoration:none;">{{from_email}}</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:0 30px 24px 30px;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#171717;border:1px solid #2a2a2a;border-radius:10px;">
+                  <tr>
+                    <td style="padding:16px 18px;font-size:12px;color:#9d9d9d;text-transform:uppercase;letter-spacing:.8px;border-bottom:1px solid #2a2a2a;">
+                      Message
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding:18px;font-size:15px;line-height:1.7;color:#f0f0f0;white-space:pre-line;">
+                      {{message}}
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:0 30px 28px 30px;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-collapse:separate;border-spacing:0 10px;">
+                  <tr>
+                    <td style="width:140px;font-size:12px;color:#9d9d9d;">Submitted</td>
+                    <td style="font-size:13px;color:#e5e5e5;">{{submitted_at}}</td>
+                  </tr>
+                  <tr>
+                    <td style="width:140px;font-size:12px;color:#9d9d9d;">Recipient</td>
+                    <td style="font-size:13px;color:#e5e5e5;">{{to_name}}</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:18px 30px;border-top:1px solid #252525;background:#0d0d0d;">
+                <div style="font-size:12px;color:#9a9a9a;line-height:1.6;">
+                  This email was sent from your portfolio contact form.
+                  <br />
+                  Reply directly to this email to answer {{from_name}}.
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
